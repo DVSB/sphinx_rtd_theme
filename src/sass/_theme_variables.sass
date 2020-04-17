@@ -1,6 +1,15 @@
 // In here are varibles used for sphinx_rtd_theme, they either add to or overwrite the default ones
 // that are set in wyrm_core/wy_variables.sass. You'll find wyrm in bower_components if you're looking
-// for a reference.
+// for a reference. Or look at https://github.com/snide/wyrm
+
+//add the cryptomator colors
+@import cryptomator_cd
+
+$link-color:                          $primary
+$link-color-hover:                    $primary-light
+$menu-background-color:               $gray-blueish-cryptomator-1
+$background-color:                    $gray-blueish-cryptomator-9
+$dropdown-border-color:               $gray-blueish-cryptomator-8
 
 $fa-font-path:                        "~font-awesome/fonts"
 $static-img:                          "../img/"
@@ -13,15 +22,15 @@ $mathjax-color:                       $text-color
 $headerlink-color:                    $text-color
 
 // Code colors
-$text-viewcode-color:                 $green
+$text-viewcode-color:                 $blue
 $text-codexref-color:                 $text-color
 
 // Definition list colors
-$class-color:                         $blue
+$class-color:                         $primary
 $method-color:                        $gray
 
 // GUI label color
-$guilabel-color:                      $blue
+$guilabel-color:                      $primary
 
 // Footer colors
 $footer-color:                        $text-medium
@@ -30,11 +39,11 @@ $footer-color:                        $text-medium
 $menu-vertical-background-color:      $section-background-color
 
 // Menu text colors
-$menu-color:                          $gray
-$menu-dark:                           lighten($menu-color,10%) !default
-$menu-medium:                         lighten($menu-color,27.5%) !default
-$menu-light:                          lighten($menu-color,45%) !default
-$menu-lighter:                        lighten($menu-color,60%) !default
+$menu-color:                          $gray-blueish-cryptomator-4
+$menu-dark:                           $gray-blueish-cryptomator-3
+$menu-medium:                         $gray-blueish-cryptomator-5
+$menu-light:                          $gray-blueish-cryptomator-7
+$menu-lighter:                        $gray-blueish-cryptomator-8 //maybe 9?
 
 // Menu link colors
 $menu-link-color:                     $text-color
@@ -45,13 +54,13 @@ $menu-link-active:                    $white
 
 // Navigation colors
 $nav-background-color:                $menu-background-color
-$nav-search-background-color:         $blue
+$nav-search-background-color:         $primary
 $nav-search-color:                    $section-background-color
-$nav-link-color:                      $blue
+$nav-link-color:                      $primary //unknown what this thing is doing...
 $nav-link-color-visited:              $purple
 $nav-link-color-hover:                lighten($nav-link-color, 6%) !default
 $nav-link-color-alt:                  hsl(33, 100%, 51%)
-$nav-caption:                         lighten($blue, 15%)
+$nav-caption:                         $primary-light
 
 // Sidebar colors
 $sidebar-background-color:            $table-stripe-color
