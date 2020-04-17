@@ -1,70 +1,37 @@
 **************************
-Read the Docs Sphinx Theme
+Cryptomator Sphinx Theme
 **************************
 
-.. image:: https://img.shields.io/pypi/v/sphinx_rtd_theme.svg
-   :target: https://pypi.python.org/pypi/sphinx_rtd_theme
-   :alt: Pypi Version
-.. image:: https://travis-ci.org/readthedocs/sphinx_rtd_theme.svg?branch=master
-   :target: https://travis-ci.org/readthedocs/sphinx_rtd_theme
-   :alt: Build Status
-.. image:: https://img.shields.io/pypi/l/sphinx_rtd_theme.svg
-   :target: https://pypi.python.org/pypi/sphinx_rtd_theme/
-   :alt: License
-.. image:: https://readthedocs.org/projects/sphinx-rtd-theme/badge/?version=latest
-  :target: http://sphinx-rtd-theme.readthedocs.io/en/latest/?badge=latest
-  :alt: Documentation Status
-
-This Sphinx_ theme was designed to provide a great reader experience for
+This Sphinx_ theme is a fork of the `Read the Docs Sphinx theme`_, fitted to the color scheme of Cryptomator_.
+It was designed to provide a great reader experience for
 documentation users on both desktop and mobile devices. This theme is used
 primarily on `Read the Docs`_ but can work with any Sphinx project. You can find
 a working demo of the theme in the `theme documentation`_
 
+.. _Cryptomator: https://cryptomator.org/
 .. _Sphinx: http://www.sphinx-doc.org
 .. _Read the Docs: http://www.readthedocs.org
+.. _Read the Docs Sphinx theme: https://github.com/readthedocs/sphinx_rtd_theme
 .. _theme documentation: https://sphinx-rtd-theme.readthedocs.io/en/latest/
 
-Installation
-============
+Raw Configuration
+=================
 
-This theme is distributed on PyPI_ and can be installed with ``pip``:
+This project uses SASS_ to configure the resulting CSS.
+For changing the appearance, look into ``src/sass/``.
+Each file starts with a comment section explaining the content and purpose.
 
-.. code:: console
+.. _SASS: https://sass-lang.com/
 
-   $ pip install sphinx-rtd-theme
+Build Instructions
+==================
 
-To use the theme in your Sphinx project, you will need to add the following to
-your ``conf.py`` file:
+Currently the build runs only on linux.
+Dependencies are:
+* Python 3
+* npm
+* todo....
 
-.. code:: python
+If all dependencies are present, run from the project root ``python setup.py clean build_py``.
 
-    import sphinx_rtd_theme
-
-    extensions = [
-        ...
-        "sphinx_rtd_theme",
-    ]
-
-    html_theme = "sphinx_rtd_theme"
-
-For more information read the full documentation on `installing the theme`_
-
-.. _PyPI: https://pypi.python.org/pypi/sphinx_rtd_theme
-.. _installing the theme: https://sphinx-rtd-theme.readthedocs.io/en/latest/installing.html
-
-Configuration
-=============
-
-This theme is highly customizable on both the page level and on a global level.
-To see all the possible configuration options, read the documentation on
-`configuring the theme`_.
-
-.. _configuring the theme: https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
-
-Contributing
-============
-
-If you would like to help modify or translate the theme, you'll find more
-information on contributing in our `contributing guide`_.
-
-.. _contributing guide: https://sphinx-rtd-theme.readthedocs.io/en/latest/contributing.html
+ The output is written to the directory ``sphinx_rtd_theme``
