@@ -29,9 +29,9 @@ Build Instructions
 Currently the build runs only on linux.
 Dependencies are:
 * Python 3
-* npm
+* Node.js 
 * todo....
 
-If all dependencies are present, run from the project root ``python setup.py clean build_py``.
+If all dependencies are present, run from the project root ``python3 setup.py clean build_py``.
 
  The output is written to the directory ``sphinx_rtd_theme``
